@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('../fonts/Roboto-Regular.ttf') format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../fonts/Montserrat-Regular.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: local('Montserrat'), url('../fonts/Montserrat-Bold.ttf') format('woff');
+}
+
+:root {
+  --omrs-color-ink-lowest-contrast: rgba(47, 60, 85, 0.18);
+  --omrs-color-ink-low-contrast: rgba(60, 60, 67, 0.3);
+  --omrs-color-ink-medium-contrast: rgb(255, 255, 255);
+  --omrs-color-interaction: #1e4bd1;
+  --omrs-color-interaction-minus-two: rgba(73, 133, 224, 0.12);
+  --omrs-color-danger: #918f8f;
+  --omrs-color-bg-low-contrast: #ececec;
+  --omrs-color-ink-high-contrast: #121212;
+  --omrs-color-bg-high-contrast: #ffffff;
+
+  --bg-color-caja-trujillo: #ff0901;
+  --bg-color-contrast-caja-trujillo: #d5040a;
+  --bg-color-secundary-caja-trujillo: #f9cf07;
+  --bg-color-gray: rgba(229, 229, 229, 0.45);
+  --bg-color-ligth-blue: #ddeefc;
+
+  --bg-color-blue-button: #0967b3;
+}
+html {
+  letter-spacing: 0.3px;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  scrollbar-gutter: stable both-edges;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: 'Roboto';
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+a:hover {
+  color: #f2ab27;
+}

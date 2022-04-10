@@ -1,0 +1,41 @@
+.file_select {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.file_select::before {
+  background-color: var(--omrs-color-interaction);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  content: 'Seleccionar archivo'; /* testo por defecto */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.file_select input[type='file'] {
+  opacity: 0;
+  width: 200px;
+  height: 32px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .file_select input[type='file'] {
+    width: 50%;
+    height: 30px;
+  }
+
+  .file_select::before {
+    width: 180px;
+    height: 50px;
+  }
+}

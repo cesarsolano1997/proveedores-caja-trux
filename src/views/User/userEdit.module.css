@@ -1,0 +1,48 @@
+.card {
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.active {
+  color: var(--bg-color-secundary-caja-trujillo) !important;
+}
+
+.card nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.card nav ul li:first-child {
+  margin-left: 0px;
+}
+
+.card nav ul li {
+  margin-left: 50px;
+  font-size: 18px;
+}
+
+.card nav ul li:hover {
+  color: var(--bg-color-secundary-caja-trujillo);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .card nav {
+    overflow-x: scroll;
+  }
+  .card nav ul {
+    border-bottom: none;
+  }
+
+  .card nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

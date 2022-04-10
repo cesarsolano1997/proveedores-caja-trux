@@ -1,0 +1,191 @@
+.card_header {
+  margin: 3rem 40px 0rem 40px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 80px auto;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.group_text {
+  display: flex;
+  flex-direction: row;
+}
+
+.group_text strong {
+  width: 120px;
+}
+
+.card_body {
+  margin: 3rem 40px 0rem 40px;
+}
+
+.card_body .row {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+}
+
+.div_group_radio {
+  grid-row: 5;
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.group_radio {
+  margin-top: 15px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.rpn_section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.rpn_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.rpn_body span:first-child {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.section_two {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 80px 80px;
+}
+
+.infoPostor {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 80px 80px;
+}
+
+.repLegales_header {
+  margin-bottom: 10px;
+}
+
+.sucursal_header {
+  margin-bottom: 10px;
+}
+
+.group_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.modalRepLegal {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 80px 80px 80px 80px;
+}
+
+.modalRepLegal > div:nth-child(3) {
+  grid-column: 1/3;
+}
+
+.modalSucursal .data_sucursal_peru {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 80px 80px 80px;
+}
+
+.modalSucursal .data_sucursal_ext {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 80px 80px;
+}
+
+@media (max-width: 600px) {
+  .card_header {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 80px 80px 80px;
+  }
+
+  .card_body {
+    margin: 0px;
+  }
+
+  .card_body .row {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card_body .row > div {
+    margin-bottom: 15px;
+  }
+
+  .rpn_body {
+    width: 80%;
+    margin: 10px 15px 10px 10px;
+  }
+
+  .section_two {
+    grid-template-columns: 2fr;
+    grid-template-rows: 80px 80px 80px 80px;
+  }
+
+  .infoPostor {
+    grid-template-columns: 2fr;
+    grid-template-rows: 80px 80px 80px;
+  }
+  .div_group_radio span {
+    flex: 1;
+  }
+
+  .group_radio {
+    margin-left: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .modalRepLegal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modalRepLegal div {
+    margin-bottom: 30px;
+  }
+
+  .modalSucursal .data_sucursal_ext,
+  .modalSucursal .data_sucursal_peru {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modalSucursal .data_sucursal_ext div,
+  .modalSucursal .data_sucursal_peru div {
+    margin-bottom: 30px;
+  }
+}

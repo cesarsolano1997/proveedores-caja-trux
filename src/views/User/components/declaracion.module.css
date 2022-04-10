@@ -1,0 +1,21 @@
+.card_body {
+  margin: 3rem 40px 0rem 40px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 80px auto;
+  margin-bottom: 30px;
+}
+
+.group_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .card_body {
+    margin: 0;
+    grid-template-columns: 2fr;
+    grid-template-rows: 80px 80px 80px 80px;
+  }
+}

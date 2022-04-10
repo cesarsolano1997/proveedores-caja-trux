@@ -1,0 +1,32 @@
+.card_body {
+  margin: 3rem 40px 0rem 40px;
+}
+
+.div_group_radio {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.group_radio {
+  margin-top: 15px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .card_body {
+    margin: 0;
+  }
+
+  .div_group_radio {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .group_radio {
+    margin-left: 0;
+  }
+}

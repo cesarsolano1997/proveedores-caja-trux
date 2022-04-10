@@ -1,0 +1,183 @@
+.card {
+  background: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card_header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_header > span {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.group_text > strong {
+  font-weight: 500;
+}
+
+.group_text > label {
+  color: var(--omrs-color-danger);
+}
+
+.card_body {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px auto 50px auto;
+}
+
+.grid > div:nth-child(9) {
+  margin-top: 10px;
+}
+
+.grid > div:nth-child(7),
+.grid > div:nth-child(8),
+.grid > div:nth-child(9),
+.grid > div:nth-child(10) {
+  grid-column: 1 / 3;
+}
+
+.grid > div:nth-child(8) > label,
+.grid > div:nth-child(10) > label {
+  width: 100%;
+  text-align: justify;
+}
+
+.group_text {
+  display: flex;
+  flex-direction: row;
+}
+
+.group_text strong {
+  width: 140px;
+}
+
+.group_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card_datos_cotizacion {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  margin-bottom: 20px;
+  box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card_datos_cotizacion > div:first-child {
+  border-left: 3px solid var(--bg-color-caja-trujillo);
+  padding: 0 0 0 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card_datos_cotizacion > span {
+  text-align: justify;
+  width: 100%;
+}
+
+.card_datos_cotizacion > div:last-child {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.card_datos_cotizacion > div:last-child > .group_text {
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.card_datos_cotizacion > div:last-child > .group_text > strong {
+  width: 280px;
+}
+
+.card_propuesta_cotizacion > div:first-child {
+  padding: 0 0 0 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .card_header {
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .card_header > svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card_header > span {
+    width: 80%;
+    text-align: justify;
+  }
+
+  .card_body {
+    margin-top: 25px;
+    padding: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 80px 50px 50px 50px 50px 50px 50px 50px 50px;
+  }
+
+  .group_text strong {
+    width: 140px;
+  }
+
+  .grid > div:nth-child(2) > label,
+  .grid > div:nth-child(4) > label {
+    overflow-x: scroll;
+    width: 170px;
+    height: 60px;
+  }
+
+  .group_text > label {
+    width: 50%;
+  }
+
+  .card > .card_header > h2 {
+    margin-bottom: 0;
+  }
+  .card > .card_header {
+    justify-content: center;
+  }
+
+  .card_datos_cotizacion {
+    padding: 1rem;
+  }
+
+  .card_datos_cotizacion > div:last-child > div:last-child {
+    flex-direction: column;
+  }
+
+  .card_datos_cotizacion > div:last-child > div:last-child > label {
+    margin-top: 15px;
+  }
+}
