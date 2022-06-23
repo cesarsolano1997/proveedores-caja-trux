@@ -102,6 +102,7 @@ const FormLogin = ({ stateForm, loginUser, autenticate }) => {
           <button type="submit" className="btn btn-caja" onClick={handleSubmit}>
             Ingresar
           </button>
+          <a href="rpgo://app">Link al app de real plaza</a>
           <Link href="/registrar-proveedor">
             <a className="btn btn-outlined"> Deseo ser proveedor</a>
           </Link>
